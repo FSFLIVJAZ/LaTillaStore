@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNVQ8vc"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>LaTillaStore</title>
+    <style>
+
+/* CSS */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.btn-carrito {
+  background-color: #f00;
+}
+
+.btn-iniciar_sesion {
+  background-color: #00f;
+}
+      h2 {
+        background-color: #333;
+        color: rgb(18, 245, 52);
+        display: inline-block;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      /* Color y tamaño de las letras del titulo */
+      header {
+        background-color: #333;
+        color: #ea142d;
+        padding: 10px;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      nav {
+        background-color: #555;
+        color: #0defbb;
+        padding: 10px;
+        text-align: center;
+      }
+
+      nav a {
+        color: #b8f11b; /* color para los botones de busqueda (bajo del titulo) */
+        margin: 0 10px;
+        text-decoration: none;
+      }
+
+      nav a:hover {
+        text-decoration: underline red;
+      }
+      .header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50px;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  
+}
+
+.header ul li {
+  margin-right: 10px;
+}
+
+.header ul li:last-child {
+  margin-right: 0;
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header i {
+  font-size: 20px;
+}
+
+      section {
+        padding: 20px;
+        text-align: center; /* PERMITE CENTRAR */
+      }
+
+      .producto {
+        display: inline-block;
+        margin: 10px;
+        text-align: center;
+        width: 450px; /* DA LA SEPARACION DE UNO CON OTRO */
+      }
+
+      .producto img {
+        height: 200px;
+        width: 200px;
+      }
+
+      .producto h2 {
+        font-size: 18px;
+        margin: 10px 0;
+      }
+
+      .producto p {
+        font-size: 14px;
+        margin: 10px 0;
+        background-color: #333;
+        color: #ea1212;
+      }
+
+      .producto button {
+        background-color: #555;
+        border: none;
+        color: #bbf207;
+        cursor: pointer;
+        padding: 10px;
+      }
+
+      .producto button:hover {
+        background-color: #12ec50;
+      }
+
+      footer {
+        background-color: #333;
+        color: #7d0ded;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .carousel-item {
+        margin-bottom: 50px; /* ajusta la distancia del slide del carrusel */
+      }
+      .color-botin-zapatilla {
+        color: #00ff55;
+      }
+
+      p {
+			color: #00ff55; /* Cambia el color del texto  */
+		}
+
+    </style>
+
+ <!-- HTML -->   
+  </head>
+  <body>
+
+    <style>
+      body {
+        background-image: url("imagen_6.jpeg"); /* Imagen de fondo */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    </style>
+
+    <header>
+      <h1>LaTillaStore</h1>
+
+      <div class="header-buttons">
+        <a href="iniciar_sesion.html" class="btn btn-carrito">Iniciar sesión</a> 
+        <a href="carrito_de_comprass.html" class="btn btn-iniciar_sesion">Carrito</a>
+      
+    </header>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg text-center">
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <a class="navbar-brand pt-md-2" href="#">
+          <img id="logo" src="logo.jpg" alt="logo" style="width: 20%;" />
+        </a>
+        <ul class="navbar-nav justify-content-center">
+          <li class="nav-item pt-md-2 text-center active">
+            <a class="nav-link" href="zapatillas_mujer.html">Zapatillas Mujer</a>
+          </li>
+          <li class="nav-item pt-md-2 text-center">
+            <a class="nav-link" href="zapatillas_hombre.html">Zapatillas Hombre</a>
+          </li>
+          <li class="nav-item pt-md-2 text-center">
+            <a class="nav-link" href="zapatillas_hombre.html">Zapatillas Niño</a>
+          </li>
+
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+
+          </nav>
+         
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicadores -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Slides del carrusel -->
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="urbana_transparente_archivos/image001.png"
+            alt="Slide 1"
+            style="max-width: 40%; margin: 0 auto"
+            class="d-block mx-auto"
+          />
+          <!-- La clase "d-block" convierte el elemento de imagen en un bloque -->
+          <div class="carousel-caption">
+            <h3 class="color-botin-zapatilla">URBANAS</h3>
+            <p>TÚ ESTILO</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="terreexx.jpeg_archivos/image001.png"
+            alt="Slide 2"
+            style="max-width: 40%; margin: 0 auto"
+            class="d-block mx-auto"
+          />
+          <!-- la clase "mx-auto" centra horizontalmente la imagen -->
+          <div class="carousel-caption">
+            <h3 class="color-botin-zapatilla"> TODO TERRENO </h3>
+            <p>Todo TERRENO</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="running.jpeg_archivos/image001.png"
+            alt="Slide 3"
+            style="max-width: 40%; margin: 0 auto"
+            class="d-block mx-auto"
+          />
+          <!--  El estilo "max-width:40%" limita el ancho máximo de la imagen al 40% del ancho del carrusel. El estilo "margin: 0 auto;" establece los márgenes superior e inferior de la imagen en cero y el margen izquierdo y derecho en automático, lo que también ayuda a centrar la imagen en su contenedor. -->
+
+          <div class="carousel-caption">
+            <h3 class="color-botin-zapatilla">RUNNING</h3>
+            <p>NO PAIN NO GAIN</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Controles del carrusel -->
+    <div
+      class="carousel-control-prev"
+      href="#myCarousel"
+      role="button"
+      data
+    ></div>
+
+    <div class="producto">
+      <img src="ropa_mujer.jpg" alt="Zapatillas para Mujer" />
+      <h2>Moda Mujer y Hombre</h2>
+      <p>Consigue los outfits más impresionantes con Originales.</p>
+      
+      <a href="IR.html"><button>IR</button></a>
+    </div>
+
+    <div class="producto">
+      <img src="ropa_deporte.jpg" alt="Zapatillas para Niño" />
+      <h2>Zapatillas para toda ocasion</h2>
+      <p>
+        Tenis de plataforma que combinan con todo, hasta vestidos. Dale a tu
+        look un estilo único.
+      </p>
+      <a href="IR.html"><button>IR</button></a>
+
+      <!--tambien se puede usar este comando <button onclick="window.location.href='IR.html'">IR</button>  WINDOW.LOCATION se utiliza para obtener información sobre la URL actual del documento, así como para modificar la URL actual redireccionando a otra página web. -->
+    </div>
+    
+
+
+    <div class="producto">
+      <img src="ropa_outlet.jpg" alt="OUTLET" />
+      <h2>Entrenamiento</h2>
+      <p>TODO GYM, RUNNING, SENDERISMO, LEVANTAMIENTO DE CARPA</p>
+      
+      <a href="IR.html"><button>IR</button></a>
+    </div>
+  </body>
+</html>

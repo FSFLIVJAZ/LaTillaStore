@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Iniciar Sesión</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+
+        background-image: url("iniciar_session.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+
+      form {
+        max-width: 500px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #f2f2f2;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: #fff;
+        margin-bottom: 20px;
+        width: 100%;
+      }
+
+      input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 18px;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #444;
+      }
+
+   
+    </style>
+  </head>
+  <body>
+
+    <header>
+		<nav>
+			<ul>
+				<li><a href="Las_tillas.html">Inicio</a></li>
+				<li><a href="Las_tillas.html">Productos</a></li>
+				<li><a href="Las_tillas.html">Contacto</a></li>
+			</ul>
+			
+		</nav>
+	</header>
+    <form>
+      <h1>Iniciar Sesión</h1>
+      <label for="username">Nombre de Usuario:</label>
+      <input type="text" id="username" name="username" required />
+
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" name="password" required />
+
+      <input type="submit" value="Iniciar Sesión" />
+    </form>
+  </body>
+</html>
